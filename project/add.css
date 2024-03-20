@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: #e3f2ff;
+  }
+  .side {
+    position: fixed;
+    top: 12%;
+    right: 0;
+    padding-top: 20px;
+    background-color: #1a2238;
+    width: 100%;
+    height: 50px;
+    overflow-y: auto;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.7) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.7) 0px 30px 60px -30px;
+  }
+  
+  .side ul {
+    margin: 0;
+    padding-top: 3px;
+    text-align: center;
+  }
+  .side ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .side ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
+ 
+  .contact-us {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+  }
+  
+  .contact-us h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-us p {
+    margin-bottom: 5px;
+  }
+  .h {
+    color: #9daaf2;
+  }
+  .side ul li a:hover {
+    /* background-color: rgb(83, 203, 207); */
+    background-color: #02006c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .side a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #b7c1bf;
+    transform: translateY(-5px);
+  }
+  
+  .top-background {
+    position: fixed;
+    top: 0;
+    background-color: #1a2238;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+  }
+  .top-background h3 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px #02006c;
+  }
+  
+  .select {
+    background-color: #02006c;
+    padding: 10px 0px;
+    border-radius: 5px;
+  }
+  .back {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.back a {
+    background-color: #9daaf2;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block; 
+    margin: 0; 
+}
+.out {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.out a {
+  background-color: #9daaf2;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block; 
+  margin: 0; 
+}
+  
+  .content {
+    height: auto;
+    width: 400px;
+    background-color: #9daaf2;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .content:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .content form {
+    text-align: center;
+  }
+  
+  .content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    /* text-shadow: 2px 2px 2px #838383; */
+    background-color: #b9d9df;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .content input[type="email"],
+  .content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .content input[type="email"]:focus,
+  .content input[type="password"]:focus {
+    border-color: #1a2238;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.15) 0px 5px 10px;
+  }
+  
+  .content button {
+    background-color: #1a2238;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content button:hover {
+    background-color: #02006c;
+  }
+  .top-background,
+  .side {
+    z-index: 1;
+  }
+  
+  .pic img {
+    height: 500px;
+    width: 1200px;
+  
+    margin-top: 19%;
+    margin-left: 10%;
+  
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: auto;
+  }
+/*   
+  .out {
+    background-color: red;
+    padding: 10px 0px;
+    border-radius: 5px;
+  } */
+  
+  .regform {
+    width: 500px;
+    background-color: #9daaf2;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    margin-top: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  
+  .regform h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    /* text-shadow: 2px 2px 2px #838383; */
+    background-color: #b9d9df;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .regform label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .regform input[type="text"],
+  .regform input[type="email"],
+  .regform input[type="password"],
+  .regform select,
+  .regform input[type="date"],
+  .regform input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .regform input[type="text"]:focus,
+  .regform input[type="email"]:focus,
+  .regform input[type="password"]:focus,
+  .regform select:focus,
+  .regform input[type="date"]:focus,
+  .regform input[type="number"]:focus {
+    border-color: #1a2238;
+  }
+  
+  .regform button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .regform button:hover {
+    background-color: darkgreen;
+  }
+  
+  table {
+    width: 80%; 
+    margin: 50px auto; 
+    border-collapse: collapse;
+    margin-top: 150px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd; 
+  }
+  
+  th,
+  td {
+    padding: 8px; 
+    text-align: left; 
+  }
+  
+  th {
+    background-color: #394f8a;
+    color: white;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(133, 175, 235); 
+    text-align: center;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: rgb(133, 175, 235); 
+    text-align: center;
+  }
+  
+  tr:hover {
+    background-color:  rgb(57, 79, 138);
+  }
+  
+  .contact-us {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 97%;
+    height: 200px;
+    margin-top: 80%;
+    top: 0;
+  }
+  .contact-us h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-us p {
+    margin-bottom: 5px;
+  }
+  .para1 {
+    position: absolute;
+    top: 20%;
+    margin-top: 2.5%;
+    padding: 20px;
+    font-size: 40px;
+    width: 97%;
+    background-color: #b7c1bf;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bolder;
+    
+  }
+
+  
+
+
+  .para2 {
+    margin-top: 7%;
+    padding: 30px;
+    font-size: 20px;
+   
+    height: 100px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  }
+  .pic1 img {
+    height: 500px;
+    width: 1200px;
+    margin-top: 13%;
+    margin-left: 10%;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: auto;
+  }
+  
+  .view-link {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-link:hover {
+    background-color: #45a049;
+  }
+  .apply-link {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #4c5baf; 
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  .apply-link:hover {
+      background-color: #45a049; 
+  }
+  
